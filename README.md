@@ -11,7 +11,7 @@ The training batches contain the remaining images in random order, but some trai
 one class than another. Between them, the training batches contain exactly 5000 images from each class. 
 
 ## K-Means Clustering to find Main Colors
-There are total 6000 images of 32x32 dimension. So, there are P = 6000*32*32 = 6144000 pixels, each pixel having 3 channels 
+There are total 6000 images of 32x32 dimension. So, there are P = 6000x32x32 = 6144000 pixels, each pixel having 3 channels 
 (RGB vaue). Run K-means clustering on P pixels to find K = 24 clusters. The centers of the cluster will be the main colors.
 Convert the colored images to K-color images by converting each pixel's value to the closest main color in terms of 
 Euclidean distance. These are the outputs of the network, whose each pixel falls in one of those K clusters.
